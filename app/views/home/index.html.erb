@@ -1,19 +1,28 @@
 <div class="login-box" style="background-color: white;">
 	<% unless current_user %>
 	<%= form_tag sessions_path do %>
+    <input id="username" name="username" type="text" placeholder="Username" />
+
+    <input id="password" name="password" type="password" placeholder="Password" />
+
+    <table>
+    	<tbody>
+    		<tr>
+    			<td width="50px">
+					<%= check_box_tag :remember_me, 1, params[:remember_me] %>
+					<%= label_tag :remember_me %>
+    			</td>
+    			<td>
+					<input name="commit" type="submit" value="Log in" />
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+
   <div class="field">
-    <%= label_tag :username %>
-    <%= text_field_tag :username, params[:username] %>
+    
   </div>
-  <div class="field">
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-  </div>
-  <div class="field">
-    <%= check_box_tag :remember_me, 1, params[:remember_me] %>
-    <%= label_tag :remember_me %>
-  </div>
-  <div class="actions"><%= submit_tag "Log in" %></div>
+  <div class="actions"></div>
 <% end %>
 </div>
 <% end %>
@@ -23,7 +32,8 @@
   $.backstretch([
     "<%= asset_path('home_backgrounds/1.jpg') %>",
     "<%= asset_path('home_backgrounds/2.jpg') %>",
-    "<%= asset_path('home_backgrounds/3.jpg') %>"   
+    "<%= asset_path('home_backgrounds/3.jpg') %>",
+    "<%= asset_path('home_backgrounds/4.jpg') %>"   
   ], { fade: "slow", duration: 4000});
 
   $('.login-box')
