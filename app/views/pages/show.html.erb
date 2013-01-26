@@ -11,8 +11,11 @@
 </p>
 
 <p>
-  <b>Template:</b>
-  <%= @page.template_id %>
+  <b><%= link_to @page.template.name, edit_template_path(@page.template_id) %></b>
+  <div>
+  	<%= @page.template.content.html_safe %>
+  </div>
+
 </p>
 
 

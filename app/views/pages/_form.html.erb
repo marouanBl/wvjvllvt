@@ -19,10 +19,12 @@
     <%= f.label :issue_id %><br />
     <%= f.number_field :issue_id %>
   </div>
-  <div class="field">
-    <%= f.label :template_id %><br />
-    <%= f.number_field :template_id %>
-  </div>
+  <select data-placeholder="Choose a Template..." class="chzn-select" id="page_template_id" name="page[template_id]" style="width:350px;" tabindex="4">
+    <option value=""></option>
+    <% current_user.templates.order("name").all.each do |template| %>  
+      <option value="<%= template.id %>"><%= template.name %></option> 
+    <% end %> 
+  </select>
   <div class="actions">
     <%= f.submit %>
   </div>
