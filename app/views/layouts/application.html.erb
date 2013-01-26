@@ -8,9 +8,9 @@
 </head>
 <body>
 
-  <div id="nav">
+  <div class="navbar">
     <% if current_user %>
-      <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+      <%= link_to "Edit Profile (" + current_user.username + ")", edit_user_path(current_user.id) %>
       <%= link_to "Logout", :logout %>
     <% else %>
       <%= link_to "Register", new_user_path %> |
@@ -21,9 +21,11 @@
     <p id="notice"><%= notice %></p>
     <p id="alert"><%= alert %></p>
   </div>
+<div id="container">
 
 <%= yield %>
 
+</div>
 <script type="text/javascript">
 	$(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 </script>
