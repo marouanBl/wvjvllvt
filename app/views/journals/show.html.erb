@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @journal.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @journal.description %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @journal.user_id %>
+</p>
+
+<p>
+  <b>Cycle:</b>
+  <%= @journal.cycle %>
+</p>
+
+<p>
+  <b>Has cycle:</b>
+  <%= @journal.has_cycle %>
+</p>
+
+<p>
+  <b>Cycle started:</b>
+  <%= @journal.cycle_started %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @journal.updated_at %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @journal.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>

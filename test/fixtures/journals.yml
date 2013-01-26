@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  user_id: 1
+  cycle: MyString
+  has_cycle: false
+  cycle_started: 2013-01-25 17:33:10
+  updated_at: 2013-01-25 17:33:10
+  category_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  user_id: 1
+  cycle: MyString
+  has_cycle: false
+  cycle_started: 2013-01-25 17:33:10
+  updated_at: 2013-01-25 17:33:10
+  category_id: 1
