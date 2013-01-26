@@ -6,6 +6,13 @@ class SorceryCore < ActiveRecord::Migration
       t.string :crypted_password, :default => nil
       t.string :salt,             :default => nil
 
+      t.string :first_name,             :default => nil
+      t.string :last_name,             :default => nil
+      t.string :location,             :default => nil
+      t.string :gender,             :default => nil
+      t.string :birthday,             :default => nil
+      t.string :about_me,             :default => nil
+
       t.timestamps
     end
   end
