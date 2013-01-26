@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 
   has_many :journals
   has_many :articles
+  has_many :templates
   
   attr_accessible :username, :email, :password, :password_confirmation
 

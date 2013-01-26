@@ -23,10 +23,12 @@
     <%= f.label :has_been_released %><br />
     <%= f.check_box :has_been_released %>
   </div>
-  <div class="field">
-    <%= f.label :journal_id %><br />
-    <%= f.number_field :journal_id %>
-  </div>
+  <select data-placeholder="Choose a Journal..." class="chzn-select" id="issue_journal_id" name="issue[journal_id]" style="width:350px;" tabindex="4">
+    <option value=""></option>
+    <% current_user.journals.order("title").all.each do |journal| %>  
+      <option value="<%= journal.id %>"><%= journal.title %></option> 
+    <% end %> 
+  </select>
   <div class="actions">
     <%= f.submit %>
   </div>

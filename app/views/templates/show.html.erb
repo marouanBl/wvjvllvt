@@ -12,7 +12,7 @@
 
 <p>
   <b>User:</b>
-  <%= @template.user_id %>
+  <%= link_to @template.user.username, user_path(@template.user_id) %>
 </p>
 
 

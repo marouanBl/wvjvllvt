@@ -24,7 +24,7 @@ class TemplatesController < ApplicationController
   # GET /templates/new
   # GET /templates/new.json
   def new
-    @template = Template.new
+    @template = current_user.templates.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -40,7 +40,7 @@ class TemplatesController < ApplicationController
   # POST /templates
   # POST /templates.json
   def create
-    @template = Template.new(params[:template])
+    @template = current_user.templates.new(params[:template])
 
     respond_to do |format|
       if @template.save
@@ -72,7 +72,7 @@ class TemplatesController < ApplicationController
   # DELETE /templates/1
   # DELETE /templates/1.json
   def destroy
-    @template = Template.find(params[:id])
+    @template = current_user.templates.find(params[:id])
     @template.destroy
 
     respond_to do |format|
