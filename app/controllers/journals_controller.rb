@@ -24,7 +24,7 @@ class JournalsController < ApplicationController
   # GET /journals/new
   # GET /journals/new.json
   def new
-    @journal = Journal.new
+    @journal = current_user.journals.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -40,7 +40,7 @@ class JournalsController < ApplicationController
   # POST /journals
   # POST /journals.json
   def create
-    @journal = Journal.new(params[:journal])
+    @journal = current_user.journals.new(params[:journal])
 
     respond_to do |format|
       if @journal.save
@@ -72,7 +72,7 @@ class JournalsController < ApplicationController
   # DELETE /journals/1
   # DELETE /journals/1.json
   def destroy
-    @journal = Journal.find(params[:id])
+    @journal = current_user.journals.find(params[:id])
     @journal.destroy
 
     respond_to do |format|

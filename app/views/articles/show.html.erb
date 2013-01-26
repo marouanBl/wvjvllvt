@@ -27,7 +27,7 @@
 
 <p>
   <b>User:</b>
-  <%= @article.user_id %>
+  <%= link_to @article.user.username, user_path(@article.user_id) %>
 </p>
 
 <p>

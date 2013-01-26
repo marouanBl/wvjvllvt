@@ -1,0 +1,19 @@
+<% @user.journals.each do |journal| %>
+  <tr>
+    <td><%= journal.title %></td>
+    <td><%= link_to 'Show', journal %></td>   
+        <td><%= link_to 'Edit', edit_journal_path(journal) %></td>
+        <td><%= link_to 'Destroy', journal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+  </tr>
+<% end %>
+
+<% @user.articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= link_to 'Show', article %></td>   
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+  </tr>
+<% end %>
