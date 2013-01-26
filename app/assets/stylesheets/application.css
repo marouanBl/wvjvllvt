@@ -13,5 +13,40 @@
  */
 
  .nav {
- 	
+ 	font: 14px/21px "Helvetica Neue", Helvetica, Verdana, sans-serif;
+
+ 	background: #555555;
+
+	-moz-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+	-webkit-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+	box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+ }
+
+ .nav .box3 h1 {
+
+ 	font-size: 30px;
+	color: #A6A6A6;
+	color: rgba(100, 100, 100, 0.35);
+	text-transform: uppercase;
+	font-family: gnuolane-regular, "Helvetica Neue", Helvetica, Verdana, sans-serif;
+ }
+
+ .nav .box8 ul {
+ 	float: right;
+ 	line-height: 40px;
+ 	list-style: none;
+ }
+
+ .nav .box8 ul li {
+ 	position: relative;
+	float: left;
+	display: list-item;
+ }
+
+ .nav .box8 ul li a {
+ 	cursor: pointer;
+	padding: 12px 12px 13px;
+	color: #dedede;
+	text-decoration: none;
+	outline: none;
  }

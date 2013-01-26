@@ -1,6 +1,6 @@
 Unbound5::Application.routes.draw do
 
-  root :to => 'journals#index'
+  root :to => 'home#index'
 
 
 

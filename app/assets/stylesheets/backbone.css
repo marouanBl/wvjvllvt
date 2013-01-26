@@ -1,12 +1,17 @@
 #container {
   width: 100%;
-  margin-top: 30px;
-  padding: 0px;
+  margin-top: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   
   text-align: center;
 }
 
 .row {
+  margin: 0px;
+  padding: 0px;
     display: block;
     padding: 0px;
     
@@ -17,35 +22,26 @@
 * The Navbar
 ******************************/
 .navbar {
-    height:30px;
+  margin: 0px;
+  padding: 0px;
+    height:40px;
     
     position:fixed;
     top:0;
     left:0;
     
     width:100%;
-    color: red;
-    background-color: black;
     
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 30px;
     text-align: center;
 }
 
 .navbar a, a:visited, a:active{
-    line-height:30px;
-    
-    color: red;
-    
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 30px;
-    text-align: center;
+    line-height:40px;
 }
 
 
@@ -54,52 +50,85 @@
 ******************************/
 
 .box12 {
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   display: inline-block;
 }
 
 .box11 {
+  margin: 0px;
+  padding: 0px;
   width: 91.48936170212765%;
+  display: inline-block;
 }
 
 .box10 {
+  margin: 0px;
+  padding: 0px;
   width: 82.97872340425532%;
+  display: inline-block;
 }
 
 .box9 {
+  margin: 0px;
+  padding: 0px;
   width: 74.46808510638297%;
   display: inline-block;
 }
 
 .box8 {
+  margin: 0px;
+  padding: 0px;
   width: 65.95744680851064%;
+  display: inline-block;
 }
 
 .box7 {
+  margin: 0px;
+  padding: 0px;
   width: 57.44680851063829%;
+  display: inline-block;
 }
 
 .box6 {
+  margin: 0px;
+  padding: 0px;
   width: 48.93617021276595%;
+  display: inline-block;
 }
 
 .box5 {
+  margin: 0px;
+  padding: 0px;
   width: 40.42553191489362%;
+  display: inline-block;
 }
 
 .box4 {
+  margin: 0px;
+  padding: 0px;
   width: 31.914893617021278%;
+  display: inline-block;
 }
 
 .box3 {
+  margin: 0px;
+  padding: 0px;
   width: 23.404255319148934%;
   display: inline-block;
 }
 
 .box2 {
+  margin: 0px;
+  padding: 0px;
   width: 14.893617021276595%;
+  display: inline-block;
 }
 
 .box1 {
+  margin: 0px;
+  padding: 0px;
   width: 6.382978723404255%;
+  display: inline-block;
 }

@@ -9,13 +9,30 @@
 <body>
 
   <div class="navbar nav">
-    <% if current_user %>
-      <%= link_to "Edit Profile (" + current_user.username + ")", edit_user_path(current_user.id) %>
-      <%= link_to "Logout", :logout %>
-    <% else %>
-      <%= link_to "Register", new_user_path %> |
-      <%= link_to "Login", :login %>
-    <% end %>
+    <div class="box3">
+      <h1>
+        <%= link_to "[Unbound*]", root_url %>
+      </h1>
+    </div>
+    <div class="box8">
+      <ul>
+        
+      <% if current_user %>
+      <li>
+        <%= link_to "Edit Profile (" + current_user.username + ")", edit_user_path(current_user.id) %>
+      </li>
+      <li>
+        <%= link_to "Logout", :logout %>
+      </li>
+      <% else %>
+      <li>
+        <%= link_to "Register", new_user_path %> |
+      </li>
+      <li>
+        <%= link_to "Login", :login %>
+      </li>
+      <% end %>
+    </div>
   </div>
   <div>
     <p id="notice"><%= notice %></p>
@@ -29,6 +46,7 @@
 <script type="text/javascript">
 	$(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true});
 </script>
+<script src="jquery.backstretch.js"></script>
 
 </body>
 </html>
