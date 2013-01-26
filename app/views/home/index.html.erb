@@ -1,31 +1,20 @@
 <div class="login-box" style="background-color: white;">
-	<% unless current_user %>
-	<%= form_tag sessions_path do %>
-    <input id="username" name="username" type="text" placeholder="Username" />
 
-    <input id="password" name="password" type="password" placeholder="Password" />
+		<%= form_tag sessions_path do %>
 
-    <table>
-    	<tbody>
-    		<tr>
-    			<td width="50px">
-					<%= check_box_tag :remember_me, 1, params[:remember_me] %>
-					<%= label_tag :remember_me %>
-    			</td>
-    			<td>
-					<input name="commit" type="submit" value="Log in" />
-    			</td>
-    		</tr>
-    	</tbody>
-    </table>
+		    <input id="username" name="username" type="text" placeholder="Username" />
 
-  <div class="field">
-    
-  </div>
-  <div class="actions"></div>
-<% end %>
+		    <input id="password" name="password" type="password" placeholder="Password" />
+
+
+			<input name="commit" type="submit" class="submit" value="Log in" />
+
+			<%= check_box_tag :remember_me, 1, params[:remember_me] %>
+			<%= label_tag :remember_me %>
+		<% end %>
+
 </div>
-<% end %>
+
 
 <script>
   // Or, to start a slideshow, just pass in an array of images
