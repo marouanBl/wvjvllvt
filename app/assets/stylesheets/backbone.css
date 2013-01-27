@@ -21,14 +21,18 @@
 /******************************
 * The Navbar
 ******************************/
-.navbar {
-  margin: 0px;
-  padding: 0px;
-    height:40px;
-    
-    position:fixed;
-    top:0;
-    left:0;
+#navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #236277;
+    -moz-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    -webkit-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    display: block;
+    height: 30px;
     
     width:100%;
     
@@ -36,14 +40,38 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    line-height: 30px;
     text-align: center;
 }
 
-.navbar a, a:visited, a:active{
-    line-height:40px;
+#navbar h1 a{
+    height: 40px;
+    margin: -30px;
+    padding: 0px;
+    width: 23.404255319148934%;
+    display: inline-block;
+    float: left;
 }
 
+#navbar ul {
+    line-height: 40px; 
+}
+
+#navbar ul.right-nav {
+    float: right;
+    margin-right: 40px;
+
+}
+
+#navbar ul.left-nav {
+    margin-left: 185px;
+
+}
+
+#navbar ul li {
+    position: relative;
+    float: left; 
+    top: -35px;
+}
 
 /******************************
 * The Structure
