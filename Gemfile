@@ -8,6 +8,9 @@ gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'sorcery'
 
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

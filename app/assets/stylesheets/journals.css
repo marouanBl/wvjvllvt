@@ -1,0 +1,20 @@
+#journals-box {
+	width: 100px;
+	height: 200px;
+
+	display: inline-block;
+
+	padding: 0px;
+
+	background-color: #eee;
+
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+
+#journals-box .logo {
+	width: 100px;
+	height: 150px;
+
+	background-color: white;
+}
