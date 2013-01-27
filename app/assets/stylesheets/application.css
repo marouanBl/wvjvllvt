@@ -13,13 +13,17 @@
  */
 
  .nav {
- 	font: 14px/21px "Helvetica Neue", Helvetica, Verdana, sans-serif;
-
- 	background: #555555;
-
-	-moz-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
-	-webkit-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
-	box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #236277;
+    -moz-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    -webkit-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    display: block;
+    height: 40px;
  }
 
  .nav .box3 h1 {
@@ -50,3 +54,126 @@
 	text-decoration: none;
 	outline: none;
  }
+
+
+***************
+css
+***********
+
+/*************************
+* NAVBAR
+*************************/
+
+#navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #236277;
+    -moz-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    -webkit-box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    box-shadow: 0 1px 6px #333333, 0 1px 1px black;
+    display: block;
+    height: 40px;
+}
+
+#navbar h1 a{
+    display: block;
+    height: 40px;
+    background: url("images/logo.png") no-repeat center;
+    width: 172px;
+    margin: 0 0 0 10px;
+    text-indent: -9999px;
+}
+
+#navbar ul {
+    line-height: 40px; 
+}
+
+#navbar ul.right-nav {
+    float: right;
+    margin-right: 40px;
+
+}
+
+#navbar ul.left-nav {
+    margin-left: 185px;
+
+}
+
+#navbar ul li {
+    position: relative;
+    float: left; 
+    top: -40px;
+
+
+
+}
+
+#navbar ul .new-button a {
+    margin-right: 10px;
+}
+
+#navbar ul .new-button a span {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#navbar ul .profile-nav {
+    background: #333;
+    content: " ";
+    display: block;
+    float: right;
+    margin: 41px 130px 0 0;
+    width: 1px;
+    height: 18px;
+}
+
+#navbar ul .nav-link {
+
+    cursor: pointer;
+    padding: 12px 12px 13px;
+    color: #dedede;
+    margin: 1px 0 0 0;
+}
+
+#navbar ul .nav-link.selected {
+    background-color: #3A3A3A;
+
+}
+
+#navbar ul .top-nav ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: black;
+
+}
+
+#navbar ul .top-nav:hover a,
+#navbar ul .top-nav:hover div {
+    background-color: #3A3A3A;
+}
+
+#navbar ul .top-nav:hover a:active,
+#navbar ul .top-nav:hover div:active {
+    background-color: #333; 
+}
+#navbar ul .top-nav:hover ul {
+    display: block; 
+}
+#navbar ul .top-nav:hover ul li a {
+    width: 125px;
+    padding: 6px 10px;
+    line-height: 20px;
+    display: block;
+    font-size: 12px;
+}
+#navbar ul .top-nav:hover ul li a:hover {
+    background-color: #4A4A4A; 
+}
+#navbar ul .top-nav:hover ul li a:active {
+    background-color: #434343; 
+}

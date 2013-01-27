@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 	def create
 	  @user = User.new(params[:user])
 	  if @user.save
-	    redirect_to edit_user_path(params[:user][:id]), :notice => "Signed up! Please Take a moment to edit your data before continuing on"
+	    redirect_to journals_path, :notice => "Signed up! Please Take a moment to edit your data before continuing on"
 	  else
 	    render :new
 	  end

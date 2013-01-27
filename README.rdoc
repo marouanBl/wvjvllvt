@@ -1,3 +1,8 @@
 == Changing The Doc
 
 Well you've gotta do with that for now
+
+== Issues :
+Home : jquery fadein and fadeout is still messy, although i don't know why
+
+User's inscription :  Wanna set it to redirect the user to it's editing page but it does not work, it's set to redirect to the journals landing page for the moment
