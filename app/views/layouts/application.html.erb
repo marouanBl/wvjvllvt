@@ -7,16 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <div class="navbar nav">
-    <div class="box3">
+<header id="navbar">
       <h1>
         <%= link_to "[Unbound*]", root_url %>
       </h1>
-    </div>
-    <div class="box8">
-      <ul>
-        
+    
+    <ul class="left-nav">
+    </ul>
+    <ul class="right-nav">
+              
       <% if current_user %>
       <li>
         <%= link_to "Edit Profile (" + current_user.username + ")", edit_user_path(current_user.id) %>
@@ -32,8 +31,9 @@
         <%= link_to "Login", :login %>
       </li>
       <% end %>
-    </div>
-  </div>
+      </ul>
+  </header>
+
   <div>
     <p id="notice"><%= notice %></p>
     <p id="alert"><%= alert %></p>
